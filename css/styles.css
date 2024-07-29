@@ -11704,3 +11704,19 @@ section#contact form#contactForm :-ms-input-placeholder {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.icon-up::before {
+  content: "⤴️";
+  margin-right: 5px;
+}
+.icon-down::before {
+  content: "⤵️";
+  margin-right: 5px;
+}
+.icon-thumb::before {
+  content: "👍";
+  margin-right: 5px;
+}
+
+.list > li {
+  margin-bottom: 20px;
+}
