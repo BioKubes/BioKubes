@@ -11696,11 +11696,203 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+#solution {
+  padding: 30px 0;
+}
 
-.footer {
+#solution .section-heading {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+#solution .solution-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-right: 10px; /* Reduced padding for closer alignment */
+  margin-right: 0; /* Removed right margin for closer alignment */
+    padding-right: 0; 
+}
+
+#solution .solution-text h3 {
+  color: #f4821f;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+#solution .solution-text h3 .icon {
+  margin-left: 10px;
+}
+
+#solution .solution-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+#solution .solution-text ul li {
+  font-size: 1em;
+  margin-bottom: 3px;
+}
+
+#solution .solution-image {
   text-align: center;
-  font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#solution .solution-image img, #solution .solution-steps img {
+  max-width: 100%;
+  height: auto;
+  height: 500px; /* Fixed height for both images */
+}
+
+#solution .solution-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 10px; /* Reduced padding for closer alignment */
+  padding-right: 0px;
+}
+
+.row.justify-content-center {
+  justify-content: center;
+  align-items: center;
+}
+
+#validation {
+  padding: 30px 0;
+}
+
+#validation .section-heading {
+  font-size: 2em;
+  margin-bottom: 90px;
+}
+
+#validation .validation-image {
+  text-align: center;
+}
+
+#validation .validation-image img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+    max-width: 1000px; /* Sets a max-width to prevent the image from becoming too large */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain; 
+}
+/* Partners & Collaborators Section */
+/* Partners & Collaborators Section */
+#partners .section-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#partners .partner-logo,
+#partners .collaborator-logo {
+  max-width: 100%;
+  height: auto;
+  width: 200px; /* Set a fixed width for all logos */
+}
+
+#partners .row {
+  margin-bottom: 3rem;
+}
+
+#team {
+  padding: 20px 0; /* Reduce padding to make the section smaller */
+}
+
+.section-heading {
+  font-size: 24px; /* Reduce font size for the heading */
+  margin-bottom: 20px; /* Reduce margin below the heading */
+  color: #ff6600; /* Match the orange color */
+  text-align: center; /* Center align text */
+}
+
+.team-member {
+  margin-bottom: 10px; /* Reduce margin below each team member */
+}
+
+.img-container {
+  width: 100%;
+  height: auto; /* Adjust to auto height */
+  max-height: 200px; /* Set a maximum height to control image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: transparent; 
+  border: none;
+}
+
+.team-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure the entire image is visible */
+  background: transparent;
+  border: none;
+
+}
+
+.text-muted {
+  font-size: 14px;
+}
+
+h4 {
+  margin-top: 10px; /* Reduce margin above the name */
+  font-size: 16px; /* Reduce font size for the name */
+}
+
+/* Adjust the section size */
+#team .container {
+  max-width: 800px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40; /* Black background */
+  padding: 30px 0; /* Increased padding */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text horizontally */
+  padding-left: 400px;
+}
+
+.footer-content {
+  display: flex; /* Use flexbox for logo and address */
+  align-items: center; /* Center items vertically within the flex container */
+}
+
+.footer-logo-container {
+  margin-right: 55px; /* No margin to the right of the logo */
+}
+
+.footer-logo {
+  width: 310px; /* Adjust width of the logo */
+  height: auto;
+}
+
+.footer-address {
+  color: #fff; /* White text color */
+  margin: 0; /* No margin around address */
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 18px; /* Increased font size */
+}
+
+.footer a {
+  color: #00bfff; /* Light blue color for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
