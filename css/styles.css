@@ -99,7 +99,28 @@
     scroll-behavior: smooth;
   }
 }
+#top-heading {
+  text-align: justify;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  color: white;
+  width: 60%;
+}
 
+@media (min-width: 1200px) {
+  #company {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #top-heading {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -152,6 +173,12 @@ h1,
     font-size: 2.5rem;
   }
 }
+@media (max-width: 600px) {
+  h1,
+  .h1 {
+    font-size: 2rem;
+  }
+}
 
 h2,
 .h2 {
@@ -161,6 +188,13 @@ h2,
   h2,
   .h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2,
+  .h2 {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -11269,7 +11303,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color:  #212529;
+    background-color: #212529;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11712,7 +11746,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
   padding-right: 10px; /* Reduced padding for closer alignment */
   margin-right: 0; /* Removed right margin for closer alignment */
-    padding-right: 0; 
+  padding-right: 0;
 }
 
 #solution .solution-text h3 {
@@ -11745,7 +11779,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-#solution .solution-image img, #solution .solution-steps img {
+#solution .solution-image img,
+#solution .solution-steps img {
   max-width: 100%;
   height: auto;
   height: 500px; /* Fixed height for both images */
@@ -11780,9 +11815,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 #validation .validation-image img {
   width: 100%; /* Ensures the image takes up the full width of its container */
-    max-width: 1000px; /* Sets a max-width to prevent the image from becoming too large */
-    height: auto; /* Maintains the aspect ratio */
-    object-fit: contain; 
+  max-width: 1000px; /* Sets a max-width to prevent the image from becoming too large */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: contain;
 }
 /* Partners & Collaborators Section */
 /* Partners & Collaborators Section */
@@ -11825,7 +11860,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: transparent; 
+  background: transparent;
   border: none;
 }
 
@@ -11835,7 +11870,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   object-fit: contain; /* Ensure the entire image is visible */
   background: transparent;
   border: none;
-
 }
 
 .text-muted {
